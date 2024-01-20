@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.material-icons {
+  color: rgb(96, 96, 96);
+}
+
+.header {
+  display: flex;
+
+  height: 70px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+}
+.header .header_left {
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+}
+.header .header_left img {
+  margin-left: 10px;
+
+  width: 50px;
+}
+.header .header_left i {
+  padding: 0 10px;
+  cursor: pointer;
+}
+.header_search form {
+  border: 1px solid #ddd;
+  height: 35px;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+.header_search form input {
+  margin: 0;
+  padding: 10px;
+  height: 100%;
+  width: 500px;
+  border: none;
+}
+.header_search form button {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 50px;
+  border: none;
+}
+.main {
+  display: flex;
+}
+.main .sidebar {
+  height: 100%;
+  width: 230px;
+  overflow-y: scroll;
+}
+.sidebar-categories {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.sidebar-category {
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+}
+.sidebar-category:hover {
+  background-color: #e5e5e5;
+}
+.sidebar-category span {
+  margin-left: 15px;
+}
+hr {
+  height: 1px;
+  background-color: #e5e5e5;
+  border: none;
+}
+.videos {
+  background-color: #f9f9f9;
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  padding: 15px 15px;
+  border-top: 1px solid #ddd;
+}
+.videos .heading h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: rgb(3, 3, 3);
+}
+.videos .videos-recommended {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  flex-direction: row;
+}
+.video-template {
+  display: flex;
+  flex-direction: column;
+  width: 310px;
+  margin-bottom: 30px;
+}
+.video-thumbnail {
+  width: 100%;
+  height: 170px;
+}
+.video-thumbnail img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  border-radius: 12px;
+}
+.video-thumbnail img:hover {
+  border-radius: 0;
+}
+.video-details {
+  display: flex;
+  flex-direction: row;
+  margin-top: 5px;
+}
+.video-details .author img {
+  object-fit: cover;
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  margin-right: 10px;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+}
+
+.title a,
+span {
+  text-decoration: none;
+  color: rgb(96, 96, 96);
+  font-size: 14px;
+}
+.title span strong {
+  font-size: 15px;
+  color: black;
+}
